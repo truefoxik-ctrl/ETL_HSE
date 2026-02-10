@@ -21,4 +21,5 @@ with DAG('extract', schedule_interval=timedelta(minutes=30),
                  jsonb_array_elements(json_data->'pets') AS post(value);
 
                  """
+
          )
