@@ -51,4 +51,5 @@ with DAG('iot_temp', schedule_interval='@once',
 
                  SELECT id, room_id, DATE(noted_date), temp_c, side FROM airflow.airflow;
                  """
+
          )
