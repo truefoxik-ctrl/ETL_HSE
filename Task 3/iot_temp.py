@@ -106,4 +106,5 @@ with DAG('iot_temp_incremental', schedule_interval='0 2 * * *',
                  SELECT id, room_id, DATE(noted_date), temp_c, side FROM airflow.airflow
                  WHERE side = 'In' AND DATE(noted_date) >= '01-12-2018' AND id NOT IN (SELECT id FROM airflow.corr_dt) ;
                  """
+
          )
